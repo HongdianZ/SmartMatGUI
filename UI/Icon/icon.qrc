@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons8-menu-50.png</file>
+    <file>icons8-airplay-96.png</file>
+    <file>icons8-close-window-96.png</file>
+    <file>icons8-resize-96.png</file>
+    <file>icons8-shrink-96.png</file>
+  </qresource>
+</RCC>
