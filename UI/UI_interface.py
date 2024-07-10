@@ -1,17 +1,24 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'GUIfvZXzS.ui'
+## Form generated from reading UI file 'GUI.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.2
+## Created by: Qt User Interface Compiler version 6.7.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
-
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QDateTimeEdit, QFrame,
+    QGridLayout, QHBoxLayout, QLCDNumber, QLabel,
+    QMainWindow, QPushButton, QSizePolicy, QTimeEdit,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -52,12 +59,12 @@ class Ui_MainWindow(object):
         self.Menu_button = QPushButton(self.HeaderLeft)
         self.Menu_button.setObjectName(u"Menu_button")
         font1 = QFont()
-        font1.setFamily(u"Arial")
+        font1.setFamilies([u"Arial"])
         font1.setPointSize(20)
         self.Menu_button.setFont(font1)
         self.Menu_button.setStyleSheet(u"color: rgb(255, 255, 255);")
         icon = QIcon()
-        icon.addFile(u"Icon/icons8-menu-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"Icon/icons8-menu-48.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.Menu_button.setIcon(icon)
         self.Menu_button.setIconSize(QSize(40, 40))
 
@@ -85,10 +92,9 @@ class Ui_MainWindow(object):
         self.mainTitle = QLabel(self.HeaderMiddle)
         self.mainTitle.setObjectName(u"mainTitle")
         font2 = QFont()
-        font2.setFamily(u"Constantia")
+        font2.setFamilies([u"Constantia"])
         font2.setPointSize(20)
         font2.setBold(True)
-        font2.setWeight(75)
         font2.setStrikeOut(False)
         font2.setStyleStrategy(QFont.PreferDefault)
         self.mainTitle.setFont(font2)
@@ -112,7 +118,7 @@ class Ui_MainWindow(object):
         self.ShrinkWindowButton.setObjectName(u"ShrinkWindowButton")
         self.ShrinkWindowButton.setMaximumSize(QSize(50, 50))
         icon1 = QIcon()
-        icon1.addFile(u"Icon/icons8-minimize-96.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"Icon/icons8-minimize-96.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.ShrinkWindowButton.setIcon(icon1)
         self.ShrinkWindowButton.setIconSize(QSize(40, 40))
 
@@ -122,7 +128,7 @@ class Ui_MainWindow(object):
         self.ResizeWindowButton.setObjectName(u"ResizeWindowButton")
         self.ResizeWindowButton.setMaximumSize(QSize(50, 50))
         icon2 = QIcon()
-        icon2.addFile(u"Icon/icons8-resize-96.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"Icon/icons8-resize-96.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.ResizeWindowButton.setIcon(icon2)
         self.ResizeWindowButton.setIconSize(QSize(40, 40))
 
@@ -132,7 +138,7 @@ class Ui_MainWindow(object):
         self.CloseWindowButton.setObjectName(u"CloseWindowButton")
         self.CloseWindowButton.setMaximumSize(QSize(50, 50))
         icon3 = QIcon()
-        icon3.addFile(u"Icon/icons8-close-window-96.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"Icon/icons8-close-window-96.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.CloseWindowButton.setIcon(icon3)
         self.CloseWindowButton.setIconSize(QSize(40, 40))
 
@@ -146,7 +152,7 @@ class Ui_MainWindow(object):
 
         self.Content = QFrame(self.centralwidget)
         self.Content.setObjectName(u"Content")
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Content.sizePolicy().hasHeightForWidth())
@@ -159,7 +165,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.ContentLeft = QFrame(self.Content)
         self.ContentLeft.setObjectName(u"ContentLeft")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.ContentLeft.sizePolicy().hasHeightForWidth())
@@ -172,7 +178,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.MenuFrame = QFrame(self.ContentLeft)
         self.MenuFrame.setObjectName(u"MenuFrame")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Preferred)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.MenuFrame.sizePolicy().hasHeightForWidth())
@@ -189,7 +195,7 @@ class Ui_MainWindow(object):
         self.Increase = QPushButton(self.MenuFrame)
         self.Increase.setObjectName(u"Increase")
         icon4 = QIcon()
-        icon4.addFile(u"Icon/icons8-increase-64.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"Icon/icons8-increase-64.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.Increase.setIcon(icon4)
         self.Increase.setIconSize(QSize(64, 64))
 
@@ -213,7 +219,7 @@ class Ui_MainWindow(object):
         self.DecreaseLabel = QPushButton(self.MenuFrame)
         self.DecreaseLabel.setObjectName(u"DecreaseLabel")
         icon5 = QIcon()
-        icon5.addFile(u"Icon/icons8-decrease-64.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"Icon/icons8-decrease-64.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.DecreaseLabel.setIcon(icon5)
         self.DecreaseLabel.setIconSize(QSize(64, 64))
 
@@ -227,7 +233,7 @@ class Ui_MainWindow(object):
         self.Stop = QPushButton(self.MenuFrame)
         self.Stop.setObjectName(u"Stop")
         icon6 = QIcon()
-        icon6.addFile(u"Icon/icons8-stop-64.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"Icon/icons8-stop-64.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.Stop.setIcon(icon6)
         self.Stop.setIconSize(QSize(64, 64))
 
@@ -237,7 +243,7 @@ class Ui_MainWindow(object):
         self.Start.setObjectName(u"Start")
         self.Start.setFont(font)
         icon7 = QIcon()
-        icon7.addFile(u"Icon/icons8-start-80.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u"Icon/icons8-start-80.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.Start.setIcon(icon7)
         self.Start.setIconSize(QSize(64, 46))
 
@@ -251,7 +257,7 @@ class Ui_MainWindow(object):
 
         self.ContentMiddle = QFrame(self.Content)
         self.ContentMiddle.setObjectName(u"ContentMiddle")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.ContentMiddle.sizePolicy().hasHeightForWidth())
@@ -265,7 +271,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setContentsMargins(5, 5, 5, 5)
         self.PressureDisplay = QWidget(self.ContentMiddle)
         self.PressureDisplay.setObjectName(u"PressureDisplay")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy4.setHorizontalStretch(0)
         sizePolicy4.setVerticalStretch(0)
         sizePolicy4.setHeightForWidth(self.PressureDisplay.sizePolicy().hasHeightForWidth())
@@ -292,7 +298,7 @@ class Ui_MainWindow(object):
         self.Time.setSizePolicy(sizePolicy3)
         self.Time.setMinimumSize(QSize(0, 40))
         font3 = QFont()
-        font3.setFamily(u"8514oem")
+        font3.setFamilies([u"8514oem"])
         font3.setPointSize(30)
         self.Time.setFont(font3)
         self.Time.setStyleSheet(u"background-color: rgb(0, 0, 50);")
@@ -309,7 +315,7 @@ class Ui_MainWindow(object):
         sizePolicy3.setHeightForWidth(self.Alarm.sizePolicy().hasHeightForWidth())
         self.Alarm.setSizePolicy(sizePolicy3)
         font4 = QFont()
-        font4.setFamily(u"Arial")
+        font4.setFamilies([u"Arial"])
         self.Alarm.setFont(font4)
 
         self.verticalLayout_3.addWidget(self.Alarm)
@@ -332,7 +338,6 @@ class Ui_MainWindow(object):
         font5 = QFont()
         font5.setPointSize(10)
         font5.setBold(False)
-        font5.setWeight(50)
         self.timeEdit.setFont(font5)
         self.timeEdit.setCurrentSection(QDateTimeEdit.HourSection)
         self.timeEdit.setCalendarPopup(False)
@@ -341,7 +346,7 @@ class Ui_MainWindow(object):
 
         self.posture_label = QLabel(self.ContentRight)
         self.posture_label.setObjectName(u"posture_label")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        sizePolicy5 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
         sizePolicy5.setHorizontalStretch(0)
         sizePolicy5.setVerticalStretch(0)
         sizePolicy5.setHeightForWidth(self.posture_label.sizePolicy().hasHeightForWidth())
@@ -349,7 +354,6 @@ class Ui_MainWindow(object):
         font6 = QFont()
         font6.setPointSize(11)
         font6.setBold(True)
-        font6.setWeight(75)
         self.posture_label.setFont(font6)
         self.posture_label.setAlignment(Qt.AlignCenter)
         self.posture_label.setMargin(10)
@@ -440,7 +444,7 @@ class Ui_MainWindow(object):
         self.Question = QPushButton(self.frame)
         self.Question.setObjectName(u"Question")
         icon8 = QIcon()
-        icon8.addFile(u"Icon/icons8-question-96.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon8.addFile(u"Icon/icons8-question-96.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.Question.setIcon(icon8)
         self.Question.setIconSize(QSize(40, 40))
 
@@ -492,9 +496,9 @@ class Ui_MainWindow(object):
         self.SetTimer.setText(QCoreApplication.translate("MainWindow", u"Set Timer", None))
         self.timeEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"h:mm", None))
         self.posture_label.setText(QCoreApplication.translate("MainWindow", u"Posture", None))
-        self.AIResult.setText(QCoreApplication.translate("MainWindow", u"   Unknow", None))
+        self.AIResult.setText(QCoreApplication.translate("MainWindow", u"", None))
         self.breathrate_title.setText(QCoreApplication.translate("MainWindow", u"Breath Rate", None))
-        self.breathrate.setText(QCoreApplication.translate("MainWindow", u"", None))
+        self.breathrate.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.Version.setText(QCoreApplication.translate("MainWindow", u"Version 1.0", None))
         self.Question.setText("")
     # retranslateUi
