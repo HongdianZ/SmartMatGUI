@@ -107,9 +107,9 @@ class MainWindow(QMainWindow):
         # Enable TLS for secure connection
         self.client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
         # Set username and password
-        self.client.username_pw_set("smartmat", "J8@AgTUAnaG9t6W")
+        self.client.username_pw_set("smartmat", "smartmatsmartmat")
         # Connect to HiveMQ Cloud on port 8883 (default for MQTT)
-        self.client.connect("15f1b1312eed48d8b4e8542d4d351d1a.s1.eu.hivemq.cloud", 8883)
+        self.client.connect("smartmatmqttcloud.com", 8883)
         # Subscribe to a topic
         self.client.subscribe("SmartMat/Picture", qos=1)
         # Start the MQTT client loop
